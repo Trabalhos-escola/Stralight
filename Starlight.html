@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starlight Drawing</title> <!-- Apenas "Starlight Drawing" aqui -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Starlight Drawing</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Transforme sua criatividade em arte</h2>
+            <p>Explore nossa coleção de desenhos únicos e compre arte que fala ao seu coração.</p>
+            <a href="#galeria" class="btn">Ver Galeria</a>
+        </div>
+    </section>
+
+    <section id="galeria">
+        <h2>Galeria de Desenhos</h2>
+        <div class="produtos">
+            <div class="produto" onclick="mostrarDetalhes('Desenho 1', 'Descrição do desenho 1', 'R$ 100,00')">
+                <img src="https://via.placeholder.com/300x200" alt="Desenho 1">
+                <h3>Desenho 1</h3>
+                <p>R$ 100,00</p>
+            </div>
+            <div class="produto" onclick="mostrarDetalhes('Desenho 2', 'Descrição do desenho 2', 'R$ 150,00')">
+                <img src="https://via.placeholder.com/300x200" alt="Desenho 2">
+                <h3>Desenho 2</h3>
+                <p>R$ 150,00</p>
+            </div>
+            <div class="produto" onclick="mostrarDetalhes('Desenho 3', 'Descrição do desenho 3', 'R$ 200,00')">
+                <img src="https://via.placeholder.com/300x200" alt="Desenho 3">
+                <h3>Desenho 3</h3>
+                <p>R$ 200,00</p>
+            </div>
+            <div class="produto" onclick="mostrarDetalhes('Desenho 4', 'Descrição do desenho 4', 'R$ 120,00')">
+                <img src="https://via.placeholder.com/300x200" alt="Desenho 4">
+                <h3>Desenho 4</h3>
+                <p>R$ 120,00</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="detalhes">
+        <h2>Detalhes do Produto</h2>
+        <div id="detalhes-produto">
+            <h3 id="nome-produto"></h3>
+            <p id="descricao-produto"></p>
+            <p id="preco-produto"></p>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <form id="form-contato">
+            <input type="text" placeholder="Seu Nome" required>
+            <input type="email" placeholder="Seu Email" required>
+            <textarea placeholder="Mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Starlight Drawing. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
